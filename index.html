@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yivan Creation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Yivan home">
+      <span class="brand-mark">Y</span>
+      <span>Yivan</span>
+    </a>
+
+    <nav class="header-actions" aria-label="Shop actions">
+      <button class="icon-button" id="wishlistButton" type="button" aria-label="Open wishlist">
+        <span aria-hidden="true">♡</span>
+        <strong id="favCount">0</strong>
+      </button>
+      <button class="cart-button" id="cartButton" type="button" aria-label="Open cart">
+        <span aria-hidden="true">🛒</span>
+        <span>Cart</span>
+        <strong id="cartCount">0</strong>
+      </button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Creative • Sustainable • Meaningful</p>
+        <h1 id="hero-title">Yivan Creation</h1>
+        <p class="slogan">
+          YIVAN is a small creative venture that brings together creativity,
+          craftsmanship and textile management to make products that are useful,
+          aesthetic and meaningful.
+        </p>
+        <a class="primary-link" href="#shop">Shop handmade pieces</a>
+      </div>
+
+      <figure class="hero-art" aria-label="Pastel craft frame with handmade Yivan decorations">
+        <div class="craft-frame" aria-hidden="true">
+          <span class="sparkle sparkle-one">✧</span>
+          <span class="sparkle sparkle-two">♡</span>
+          <span class="thread-heart"></span>
+          <span class="thread-loop"></span>
+          <div class="spool"></div>
+          <div class="needle"></div>
+          <div class="tote-drawing">
+            <span class="handle handle-left"></span>
+            <span class="handle handle-right"></span>
+            <span class="pocket pocket-large"></span>
+            <span class="pocket pocket-small"></span>
+            <span class="bag-flower"></span>
+          </div>
+          <div class="flower-stem">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="bear">
+            <span class="ear ear-left"></span>
+            <span class="ear ear-right"></span>
+            <span class="face"></span>
+            <span class="blush blush-left"></span>
+            <span class="blush blush-right"></span>
+            <span class="bow-tie"></span>
+          </div>
+          <div class="yarn-ball"></div>
+        </div>
+      </figure>
+    </section>
+
+    <section class="shop-section" id="shop" aria-labelledby="shop-title">
+      <div class="section-heading">
+        <p class="eyebrow">Handmade with heart</p>
+        <h2 id="shop-title">Items To Buy</h2>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card" data-id="classic-tote-bag" data-name="Classic Tote Bag" data-price="199" tabindex="0" role="link" aria-label="Open Classic Tote Bag product page">
+          <button class="favorite-button" type="button" aria-label="Add classic tote bag to favorites">♡</button>
+          <img class="product-photo" src="assets/classic-tote-bag.webp" alt="Classic handmade denim tote bag with patchwork handles" />
+          <h3>Classic Tote Bag</h3>
+          <p>Handmade denim tote with patchwork handles and roomy pockets.</p>
+          <div class="buy-row">
+            <span class="price">₹199</span>
+            <button class="add-cart" type="button">Add to Cart</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="bow-keepsake-pouch" data-name="Bow Keepsake Pouch" data-price="299" tabindex="0" role="link" aria-label="Open Bow Keepsake Pouch product page">
+          <button class="favorite-button" type="button" aria-label="Add bow pouch to favorites">♡</button>
+          <div class="product-illustration pouch" aria-hidden="true"></div>
+          <h3>Bow Keepsake Pouch</h3>
+          <p>A tiny fabric pouch for treasures, threads and notes.</p>
+          <div class="buy-row">
+            <span class="price">₹299</span>
+            <button class="add-cart" type="button">Add to Cart</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="yarn-heart-charm" data-name="Yarn Heart Charm" data-price="149" tabindex="0" role="link" aria-label="Open Yarn Heart Charm product page">
+          <button class="favorite-button" type="button" aria-label="Add yarn charm to favorites">♡</button>
+          <div class="product-illustration yarn" aria-hidden="true"></div>
+          <h3>Yarn Heart Charm</h3>
+          <p>Handmade charm for bags, keys or gift wrapping.</p>
+          <div class="buy-row">
+            <span class="price">₹149</span>
+            <button class="add-cart" type="button">Add to Cart</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="mini-needle-art-kit" data-name="Mini Needle Art Kit" data-price="349" tabindex="0" role="link" aria-label="Open Mini Needle Art Kit product page">
+          <button class="favorite-button" type="button" aria-label="Add needle kit to favorites">♡</button>
+          <div class="product-illustration kit" aria-hidden="true"></div>
+          <h3>Mini Needle Art Kit</h3>
+          <p>Pastel thread, needle and fabric scraps for first stitches.</p>
+          <div class="buy-row">
+            <span class="price">₹349</span>
+            <button class="add-cart" type="button">Add to Cart</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="vision-section" aria-labelledby="vision-title">
+      <div class="vision-copy">
+        <p class="eyebrow">Our Vision</p>
+        <h2 id="vision-title">Purpose In Every Product</h2>
+        <p>
+          To promote creativity and responsible textile management by turning
+          materials into products with purpose while inspiring a more sustainable
+          tomorrow.
+        </p>
+      </div>
+
+      <form class="idea-form" id="ideaForm">
+        <label for="idea">Write your idea</label>
+        <textarea id="idea" name="idea" rows="5" placeholder="Tell us what you would love Yivan to create next..."></textarea>
+        <button type="submit">Send</button>
+        <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>YIVAN</span>
+    <p>handmade with heart, managed with care</p>
+  </footer>
+
+  <aside class="shop-drawer" id="shopDrawer" aria-hidden="true" aria-labelledby="drawerTitle">
+    <div class="drawer-panel" role="dialog" aria-modal="true">
+      <div class="drawer-header">
+        <div>
+          <p class="eyebrow" id="drawerEyebrow">Your picks</p>
+          <h2 id="drawerTitle">Cart</h2>
+        </div>
+        <button class="close-drawer" id="closeDrawer" type="button" aria-label="Close panel">×</button>
+      </div>
+
+      <div class="drawer-tabs" role="tablist" aria-label="View cart or wishlist">
+        <button class="drawer-tab is-active" id="cartTab" type="button">Cart</button>
+        <button class="drawer-tab" id="wishlistTab" type="button">Wishlist</button>
+      </div>
+
+      <div class="drawer-list" id="drawerList"></div>
+
+      <div class="drawer-total" id="drawerTotal">
+        <span>Total</span>
+        <strong id="drawerTotalValue">₹0</strong>
+      </div>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
