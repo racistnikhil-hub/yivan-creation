@@ -38,7 +38,7 @@ const productDetails = {
     name: "Classic Tote Bag",
     price: 199,
     category: "Handmade bag",
-    image: "assets/classic-tote-bag.webp",
+    image: "classic-tote-bag.webp",
     imageAlt: "Classic handmade denim tote bag with patchwork handles",
     stock: 12,
     rating: 4.8,
