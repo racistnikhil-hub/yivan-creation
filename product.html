@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classic Tote Bag | Yivan Creation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="product-page">
+  <header class="site-header">
+    <a class="brand" href="index.html#top" aria-label="Yivan home">
+      <span class="brand-mark">Y</span>
+      <span>Yivan</span>
+    </a>
+
+    <nav class="header-actions" aria-label="Shop actions">
+      <button class="icon-button" id="wishlistButton" type="button" aria-label="Open wishlist">
+        <span aria-hidden="true">♡</span>
+        <strong id="favCount">0</strong>
+      </button>
+      <button class="cart-button" id="cartButton" type="button" aria-label="Open cart">
+        <span aria-hidden="true">🛒</span>
+        <span>Cart</span>
+        <strong id="cartCount">0</strong>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-detail" id="productDetail" aria-labelledby="detailTitle">
+      <a class="back-to-shop" href="index.html#shop" id="backToShop">Back to items</a>
+
+      <div class="detail-layout">
+        <img class="detail-image" id="detailImage" src="assets/classic-tote-bag.webp" alt="Classic handmade denim tote bag with patchwork handles" />
+
+        <div class="detail-copy">
+          <p class="eyebrow" id="detailCategory">Handmade bag</p>
+          <h1 id="detailTitle">Classic Tote Bag</h1>
+          <p class="detail-price" id="detailPrice">₹199</p>
+
+          <div class="detail-stats" aria-label="Product details">
+            <span><strong id="detailStock">12</strong> in stock</span>
+            <span><strong id="detailRating">4.8</strong> rating</span>
+            <span><strong id="detailReviewCount">18</strong> reviews</span>
+          </div>
+
+          <p class="detail-description" id="detailDescription">
+            A roomy handmade denim tote with patchwork fabric handles, side pockets and a soft recycled-textile finish for everyday carrying.
+          </p>
+
+          <div class="review-panel">
+            <h2>Customer Reviews</h2>
+            <div id="detailReviews">
+              <article class="review-item">
+                <strong>Anaya</strong>
+                <p>The bag feels sturdy and the patchwork handles make it look special.</p>
+              </article>
+              <article class="review-item">
+                <strong>Meera</strong>
+                <p>Good size for books, craft items and daily shopping.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-cart-bar">
+        <div>
+          <span id="detailCartName">Classic Tote Bag</span>
+          <strong id="detailCartPrice">₹199</strong>
+        </div>
+        <button class="add-cart detail-add-cart" id="detailAddCart" type="button">Add to Cart</button>
+      </div>
+    </section>
+  </main>
+
+  <aside class="shop-drawer" id="shopDrawer" aria-hidden="true" aria-labelledby="drawerTitle">
+    <div class="drawer-panel" role="dialog" aria-modal="true">
+      <div class="drawer-header">
+        <div>
+          <p class="eyebrow" id="drawerEyebrow">Your picks</p>
+          <h2 id="drawerTitle">Cart</h2>
+        </div>
+        <button class="close-drawer" id="closeDrawer" type="button" aria-label="Close panel">×</button>
+      </div>
+
+      <div class="drawer-tabs" role="tablist" aria-label="View cart or wishlist">
+        <button class="drawer-tab is-active" id="cartTab" type="button">Cart</button>
+        <button class="drawer-tab" id="wishlistTab" type="button">Wishlist</button>
+      </div>
+
+      <div class="drawer-list" id="drawerList"></div>
+
+      <div class="drawer-total" id="drawerTotal">
+        <span>Total</span>
+        <strong id="drawerTotalValue">₹0</strong>
+      </div>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
